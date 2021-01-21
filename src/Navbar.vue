@@ -18,6 +18,7 @@ export default {
     }
 }
 </script>
+<!--you can add scoped if you want you style to be applied on on that scope-->
 <style>
 nav{
     background-color: rgb(129, 129, 167);
@@ -34,6 +35,7 @@ nav li{
     display: inline-block;
     font-size: 20px;
     text-decoration: none;
+    list-style-type: none;
     
 }
 
