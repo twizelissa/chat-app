@@ -2,20 +2,25 @@
   <div id="app">
   <h3>{{title}}</h3>
   <Navbar/>
+  <AllFriends/>
+  <OnlineFriends/>
   </div>
 </template>
 
 <script>
 
 import Navbar from './Navbar'
+import AllFriends from './AllFriends'
+import OnlineFriends from './OnlineFriends'
 export default {
   name: 'app',
   components:{
- Navbar
+ Navbar,AllFriends,OnlineFriends
   },
   data () {
     return {
-     title:" Real time app"
+     title:" Real time app",
+ 
     }
   }
 }
