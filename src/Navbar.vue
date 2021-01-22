@@ -10,7 +10,8 @@
 </template>
 <script>
 export default {
-    el:'Navbar',
+    name:'Navbar',
+    props:["friends"],
     data(){
         return {
 
@@ -18,7 +19,6 @@ export default {
     }
 }
 </script>
-<!--you can add scoped if you want you style to be applied on on that scope-->
 <style>
 nav{
     background-color: rgb(129, 129, 167);

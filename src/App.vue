@@ -2,8 +2,8 @@
   <div id="app">
   <h3>{{title}}</h3>
   <Navbar/>
-  <AllFriends/>
-  <OnlineFriends/>
+  <AllFriends :friends="friends"/>
+  <OnlineFriends :friends="friends"/>
   </div>
 </template>
 
@@ -20,7 +20,12 @@ export default {
   data () {
     return {
      title:" Real time app",
- 
+     friends:[
+            {name:'Edisor',online:true},
+            {name:'Anick',online:false},
+            {name:'Alison',online:true},
+            {name:'Mario',online:false}
+        ]
     }
   }
 }
